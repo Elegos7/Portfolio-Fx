@@ -1082,7 +1082,7 @@ Products Page
 }
 .single-project {
   background: linear-gradient(rgb(254 136 25 / 49%), rgb(0 0 0 / 61%)),
-  url(./imagenes/luces.jpg) center/cover no-repeat;
+  url(../imagenes/luces.jpg) center/cover no-repeat;
   border-radius: var(--radius);
 }
 .project-container img {
