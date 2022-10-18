@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <!-- font-awesome -->
+    <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header id="home">
+      <!-- navbar -->
+      <nav id="nav">
+        <div class="nav-center">
+          <!-- nav header -->
+          <div class="nav-header">
+            <img src="./imagenes/Logosinfondo.png" class="logo" alt="logo" />
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <!-- links -->
+          <div class="links-container">
+            <ul class="links">
+              <li>
+                <a href="./index.html" >Inicio</a>
+              </li>
+              <li>
+                <a href="./about.html" >Sobre mi</a>
+              </li>
+              <li>
+                <a href="./proyectos.html" >Proyectos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- banner 
+    
+    
+
+-->
+      <div style="min-height: 80vh;"  class="banner">
+ <video autoplay loop class="back-video" muted plays-inline src="./videos/video.mp4" type="video/mp4"></video>
+        <div style="min-height: 0%;" class="section-center hero-center">
+          <article class="hero-info">
+            <div style="margin-bottom: 0.5rem;
+            margin-left: 0;" class="underline"></div>
+              <h1 style="color: white;">Federico Schaufele</h1>
+              <!--
+              <h4>Estudiante de Programacion</h4>
+              <h4>Freelance Web Developer</h4>
+              -->
+              <div class="container">
+                
+                <span class="text sec-text">Freelancer</span>
+            </div>
+              <a download="" href="./pdf/SchaufeleCV.pdf" class="btn hero-btn">Descargue mi CV</a>
+               <!-- social icons-->
+          <ul class="social-icons hero-icons">
+            <li>
+              <a href="https://www.facebook.com/federico.schaufele.9/" target="_blank" class="social-icon">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/feed/" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+          </article>
+          <!-- contact form  -->
+        <article class="contact-form">
+            <h3>Pongase en Contacto</h3>
+            <form action="https://formspree.io/f/xvoybojq"
+            method="POST">>
+              <div class="form-group">
+                <!-- inputs -->
+                <!-- Name -->
+                <input id="nombre-apellido" type="text" placeholder="Nombre " 
+                class="form-control" name="name" />
+                <!-- Email -->
+              <input type="email" placeholder="email" 
+              class="form-control" name="email" />
+              <h3>
+                <label class="form-control-select-label" for="">Deje su Mensaje</label>
+              </h3>
+                <!-- Message -->
+                <textarea
+                required type="text" name="mensaje" id="mensaje"
+                placeholder="Mensaje" 
+                class="form-control"
+                rows="5">
+              </textarea>
+              </div>
+              <!--button-->
+               <button  type="submit" class="submit-btn btn">Enviar</button>
+            </form>
+          </article>
+        </div>
+      </div>
+    </header>
+    <a class="scroll-link top-link" href="#home">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- javascript -->
+    <script src="./js/contacto.js"></script>
+  </body>
+</html>

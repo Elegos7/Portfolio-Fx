@@ -3,283 +3,240 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About me || About</title>
+    <title>Sobre mi</title>
+    <!-- font-awesome -->
     <link
-      rel="stylesheet"
-      href="./fontawesome-free-5.12.1-web/css/all.min.css"
-    />
-    <!-- css -->
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <!-- styles -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-
   <body>
-    <!-- navbar -->
-    <nav class="nav" id="nav">
-      <div class="nav-center">
-        <!-- nav header -->
-        <div class="nav-header">
-          <button class="nav-btn" id="nav-btn">
-            <i class="fas fa-bars"></i>
-          </button>
-        </div>
-        <!-- nav links -->
-        <ul class="nav-links">
-          <li><a href="index.html">home</a></li>
-          <li><a href="about.html">about</a></li>
-          <li><a href="projects.html">projects</a></li>
-          <li><a href="contact.html">contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <!-- end of navbar -->
-    <!-- sidebar -->
-    <aside class="sidebar" id="sidebar">
-      <div>
-        <button id="close-btn" class="close-btn">
-          <i class="fas fa-times"></i>
-        </button>
-        <ul class="sidebar-links">
-          <li><a href="index.html">home</a></li>
-          <li><a href="about.html">about</a></li>
-          <li><a href="projects.html">projects</a></li>
-          <li><a href="contact.html">contact</a></li>
-        </ul>
-        <ul class="social-icons">
-          <!-- single item -->
-          <li>
-            <a href="https://www.facebook.com/federico.schaufele.9/" class="social-icon">
-              <i class="fab fa-facebook"></i>
-            </a>
-          </li>
-          <!-- end of single item -->
-          <!-- single item -->
-          <li>
-            <a href="https://www.linkedin.com/feed/" class="social-icon">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </li>
-          <!-- end of single item -->
-        </ul>
-      </div>
-    </aside>
-    <!-- end of sidebar -->
-
-    <!-- ############## -->
-    <!-- ############## -->
-    <!-- ############## -->
-    <!-- ############## -->
-
-    
-        <!-- Section Title-->
-      
-        <section class="section about">
-          <div class="section-center about-center">
-            <!-- About img-->
-            <style>
-              .hero-img::before, .about-img::before {
-              height: 55%;
-              }
-            </style>
-              
-            <article class="about-img">
-              <img src="./images/Tower.jpeg" class="hero-photo" alt="about img">
-            </article>
-            <!-- About info-->
-            <article class="about-info"> 
-              <!-- Section Title-->
-              <div class="section-title about-title">
-                <h2>About // Acerca de</h2>
-                <div class="underline"></div>
-              </div>
-              <!-- End of Section Title-->
-              <p>My name is Federico Schaufele im from Cordoba Argentina, im 28 years old, currently living in Rio Grande-Tierra del Fuego. I am a certified cook graduated from the Mariano Moreno higher Institute, Since the start of the pandemic i've been studing programing by myself, mainly HTML and CSS. Later on the year 2020  i decided to take a step up and enroll in the UTN to further my knowledge on programing. As to why the sudden change in carrer, it mostly due to the fact that my former carrer has been impacted greatly due to the pandemic, and this in turn forced me to adapt to the necesities of today, and in doing so i discovered that programing and designing web pages is a challenge but at the same time is also very rewarding once its done and working.   </p>
-              <p>Mi nombre es Federico Schaufele soy de Cordoba Argentina, tengo 28 años , actualmente vivo en Rio Grande-Tierra del Fuego. Soy Profesional Gastronomico recibido del instituto superior Mariano Moreno. Desde el comienzo de la pandemia e estado estudiando programacion por mi cuenta, especificamente HTML y CSS. En el año 2020 decidi profundizar mis estudios y me inscribi en la Tecnicatura en programacion de la UTN. El porque sobre el cambio repentino de carerra se debe en mayor medida a la pandemia y el hecho de que mi sector de trabajo previo se vio fuertemente afectado, esto a su vez me forzo a adaptarme a las necesidades laborales de hoy en dia, y en todo esto descubri que programar y diseñar paginas web es todo un desafio pero a su vez es satisfactorio una vez que todo esta listo y funcionando </p>
-            </article>
+      <!-- navbar -->
+      <nav id="nav">
+        <div class="nav-center">
+          <!-- nav header -->
+          <div class="nav-header">
+            <img src="./imagenes/Logosinfondo.png" class="logo" alt="logo" />
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
           </div>
-          <div class="content-divider"></div>
-    <!-- timeline -->
-   <section class="section timeline">
-     <!--Style-->
-     <style>
-      .section{
-        padding: 3rem 0;
-      }
-     </style>
- <!-- Section Title-->
- <div class="section-title">
-  <h2>Timeline</h2>
-  <h2>Linea de Tiempo</h2>
-  <div class="underline"></div>
+          <!-- links -->
+          <div class="links-container">
+            <ul class="links">
+              <li>
+                <a href="./index.html">Inicio</a>
+              </li>
+              <li>
+                <a href="./proyectos.html" >Proyectos</a>
+              </li>
+              <li>
+                <a href="./contacto.html" >Contacto</a>
+              </li>
+              <li>
+                <a href="#historial" class="scroll-link">Historial</a>
+              </li>
+              <li>
+                <a href="#hobbys" class="scroll-link">Hobbys</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="content-divider"></div>
+   <!-- about -->
+   <section id="home" style="background:linear-gradient( 300deg,rgb(0 0 0 / 70%),rgb(0 0 0 / 50%), rgb(0 0 0 / 0%)),url(./imagenes/forest.jpg) center/cover no-repeat;" class="section about">
+    <div class="section-center about-center">
+      <!-- About img-->   
+      <article class="about-img">
+        <img src="./imagenes/Tower.jpeg" loading="lazy" class="hero-photo" alt="about img">
+      </article>
+      <!-- About info-->
+      <article class="about-info"> 
+        <!-- Section Title-->
+        <div class="section-title about-title">
+          <h2 style="color: orange" >Acerca de mi</h2>
+          <div class="underline"></div>
+        </div>
+        <!-- End of Section Title-->
+        <!--
+        <p>My name is Federico Schaufele im from Cordoba Argentina, im 28 years old, currently living in Rio Grande-Tierra del Fuego. I am a certified cook graduated from the Mariano Moreno higher Institute, Since the start of the pandemic i've been studing programing by myself, mainly HTML and CSS. Later on the year 2020  i decided to take a step up and enroll in the UTN to further my knowledge on programing. As to why the sudden change in carrer, it mostly due to the fact that my former carrer has been impacted greatly due to the pandemic, and this in turn forced me to adapt to the necesities of today, and in doing so i discovered that programing and designing web pages is a challenge but at the same time is also very rewarding once its done and working.   </p>
+        -->
+        <p>Mi nombre es Federico Schaufele soy de Cordoba Argentina, tengo 29 años , actualmente vivo en Rio Grande-Tierra del Fuego. Soy Profesional Gastronomico recibido del instituto superior Mariano Moreno. Desde el comienzo de la pandemia e estado estudiando programacion por mi cuenta, especificamente HTML y CSS. En el año 2020 decidi profundizar mis estudios y me inscribi en la Tecnicatura en programacion de la UTN.</p> 
+        <h3>Motivacion</h3>
+        <div class="underline" style="margin-left: 1px;"></div>
+        <p>El porque sobre el cambio repentino de carerra se debe en mayor medida a la pandemia y el hecho de que mi sector de trabajo previo se vio fuertemente afectado, esto a su vez me forzo a adaptarme a las necesidades laborales de hoy en dia, y en todo esto descubri que programar y diseñar paginas web es todo un desafio pero a su vez es satisfactorio una vez se logra volver funcional un proyecto </p>
+      </article>
+    </div>
+  </section>
+    <div class="content-divider"></div>
+  <!-- timeline -->
+  <section class="section timeline">
+    <!--Style-->
+    </style>
+<!-- Section Title-->
+<div class="section-title">
+ <!--<h2>Timeline</h2>-->
+ <h2 id="historial" style="color: orange" >Linea de Tiempo</h2>
+ <div class="underline"></div>
 </div>
 <!-- End of Section Title-->
 <div class="section-center timeline-center">
-  <!--single timeline item-->
- <article class="timeline-item">
+ <!--single timeline item-->
+<article class="timeline-item">
 <h4>2021</h4>
-<p>"YPF" Gas Station - Gas station attendant</p>
+<!--<p>"YPF" Gas Station - Gas station attendant</p>-->
 <p>"YPF" Estacion de Servicio - Playero</p>
 <span class="number">
-  1
+ 1
 </span>
-<img src="./images/YPF.jpeg" class="hero-photo" alt="about img">
- </article>
-  <!-- end single timeline item-->
-  <!--single timeline item-->
- <article class="timeline-item">
-  <h4>2019-2020</h4>
-  <p>Personal Proyect "Fenix Menus" Catering and custom menus</p>
-  <p>Proyecto Personal "Fenix Menus" Servicio de Catering y menus personalizados</p>
-  <span class="number">
-    2
-  </span>
-  <img src="./images/Logo Fin.png" class="hero-photo" alt="about img">
-   </article>
-    <!-- end single timeline item-->
-    <!--single timeline item-->
- <article class="timeline-item">
-  <h4>2018</h4>
-  <p>"Al Jariff" Arab themed Food Truck Cook</p>
-  <p>"Al Jariff" Food Truck de Comida Arabe , Cocinero</p>
-  <span class="number">
-    3
-  </span>
-  <img src="./images/Jarif.jpeg" class="hero-photo" alt="about img">
-   </article>
-    <!-- end single timeline item-->
-    <!--single timeline item-->
- <article class="timeline-item">
-  <h4>2017</h4>
-  <p>Primary Line Cook - Crested Butte // Colorado (US)</p>
-  <p>Cocinero Primario - Crested Butte // Colorado (Estados Unidos)</p>
-  <span class="number">
-    4
-  </span>
-  <img src="./images/Vegas.jpeg" class="hero-photo" alt="about img">
-   </article>
-    <!-- end single timeline item-->
-    <!--single timeline item-->
- <article class="timeline-item">
-  <h4>2015</h4>
-  <p>Cook in a Chinese Restaurant "BudaTown"</p>
-  <p>Cocinero en Restaurante Chino "BudaTown"</p>
-  <span class="number">
-    5
-  </span>
-  <img src="./images/Chn.jpeg" class="hero-photo" alt="about img">
-   </article>
-    <!-- end single timeline item-->
-    <!--single timeline item-->
- <article class="timeline-item">
-  <h4>2013</h4>
-  <p>Notary Firm Courier (Internship)</p>
-  <p>Cadete  de Escribania (Pasantia)</p>
-  <span class="number">
-    6
-  </span>
-   </article>
-    <!-- end single timeline item-->
+<img src="./imagenes/YPF (1).jpeg" loading="lazy" class="hero-photo" alt="about img">
+</article>
+ <!-- end single timeline item-->
+ <!--single timeline item-->
+<article class="timeline-item">
+ <h4>2019-2020</h4>
+<!-- <p>Personal Proyect "Fenix Menus" Catering and custom menus</p>-->
+ <p>Proyecto Personal "Fenix Menus" Servicio de Catering y menus personalizados</p>
+ <span class="number">
+   2
+ </span>
+ <img src="./imagenes/Logo Fin.png" style="border-radius: 15%;" loading="lazy" class="hero-photo" alt="about img">
+  </article>
+   <!-- end single timeline item-->
+   <!--single timeline item-->
+<article class="timeline-item">
+ <h4>2018</h4>
+ <!--<p>"Al Jariff" Arab themed Food Truck Cook</p>-->
+ <p>"Al Jariff" Food Truck de Comida Arabe , Cocinero</p>
+ <span class="number">
+   3
+ </span>
+ <img src="./imagenes/Jarif.jpeg" loading="lazy" class="hero-photo" alt="about img">
+  </article>
+   <!-- end single timeline item-->
+   <!--single timeline item-->
+<article class="timeline-item">
+ <h4>2017</h4>
+ <!--<p>Primary Line Cook - Crested Butte // Colorado (US)</p>-->
+ <p>Cocinero Primario - Crested Butte // Colorado (Estados Unidos)</p>
+ <span class="number">
+   4
+ </span>
+ <img src="./imagenes/Vegas.jpeg" loading="lazy" class="hero-photo" alt="about img">
+  </article>
+   <!-- end single timeline item-->
+   <!--single timeline item-->
+<article class="timeline-item">
+ <h4>2015</h4>
+ <!--<p>Cook in a Chinese Restaurant "BudaTown"</p>-->
+ <p>Cocinero en Restaurante Chino "BudaTown"</p>
+ <span class="number">
+   5
+ </span>
+ <img src="./imagenes/Chn.jpeg" loading="lazy" class="hero-photo" alt="about img">
+  </article>
+   <!-- end single timeline item-->
+   <!--single timeline item-->
+<article class="timeline-item">
+ <h4>2013</h4>
+ <!--<p>Notary Firm Courier (Internship)</p>-->
+ <p>Cadete  de Escribania (Pasantia)</p>
+ <span class="number">
+   6
+ </span>
+  </article>
+   <!-- end single timeline item-->
 </div>
-   </section>
-   <div class="content-divider"></div>
-    <!--end of  timeline -->
-        </section>
-        <section class="Hobbies">
-          <!-- Section Title-->
- <div class="section-title">
-  <h2>Hobbys</h2>
+  </section>
+  <!--end of  timeline -->
+  <div class="content-divider"></div>
+  <!-- Section Title-->
+ <section class="Hobbies">
+ <section class="section">
+  <div class="section-title">
+  <h2 id="hobbys" style="color: orange">Hobbys</h2>
   <div class="underline"></div>
-  <section class="section">
-    <div class="section-center projects-page-center">
-      <!--single project-->
-      <article class="single-project">
-        <div class="project-container">
-          <img src="./images/ST2.jpg" alt="single project">
-          </a>
-        </div>
-        <br>
-        <div class="project-details">
-          <h4>Videogames</h4>
-          <h4>Videojuegos</h4>
-          <p>I like to play videogames, mostly single-player, but i sometimes play with friends.</p>
-          <p>Me gusta jugar video juegos, mayormente solo, pero a veces juego con amigos.
-          </p>
-         <div class="project-footer">
-         </div>
-        </div>
-      </article>
-      <!-- end of single project-->
-      <!--single project-->
-      <article class="single-project">
-       <div class="project-container">
-         <img src="./images/Flags.jpg" alt="single project">
-         </a>
-       </div>
-       <br>
-       <div class="project-details">
-         <h4>Learning Languages</h4>
-         <h4>Aprender Idiomas</h4>
-         <p>I learned languages by myself, currently studying Russian for almost 2 years.</p>
-         <p>Aprendo lenguajes por mi cuenta, actualmente estoy estudiando Ruso , aproximadamente desde hace 2 años.
-         </p>
-        <div class="project-footer">
-         
-        </div>
-       </div>
-     </article>
-     <!-- end of single project-->
-     <!--single project-->
-     <article class="single-project">
-       <div class="project-container">
-         <img src="./images/Trekking.jpg" alt="single project">
-         </a>
-       </div>
-       <br>
-       <div class="project-details">
-         <h4>Trekking</h4>
-         <p>I enjoy going Outdoors with friends, follow trails, and going to nice places.</p>
-         <p>Disfruto del Senderismo con amigos, siguiendo caminos y explorando buenos lugares.
-         </p>
-        <div class="project-footer">
-        </div>
-       </div>
-     </article>
-     <!-- end of single project-->
-    </div>
-   </section>
-     <div class="project-footer">
-     </div>
-    </div>
+  <div class="section-center projects-page-center">
+   <!--single project-->
+  <article class="single-project">
+  <div class="project-container">
+  <img src="./imagenes/ST2.jpg" loading="lazy" alt="single project">
+  </a>
+  </div>
+  <br>
+  <div class="project-details">
+  <!--<h4>Videogames</h4>-->
+  <h4>Videojuegos</h4>
+  <!--<p>I like to play videogames, mostly single-player, but i sometimes play with friends.</p>-->
+  <p>Me gusta jugar video juegos, mayormente solo, pero a veces juego con amigos.</p>
+  <div class="project-footer"></div>
+  </div>
   </article>
   <!-- end of single project-->
-  
-</div>
-<!-- End of Section Title-->
-        </section>
-        <div class="content-divider"></div>
-    <!-- ############## -->
-    <!-- ############## -->
-    <!-- ############## -->
-    <!-- ############## -->
+  <!--single project-->
+  <article class="single-project">
+  <div class="project-container">
+    <img src="./imagenes/Flags.jpg" loading="lazy" alt="single project">
+      </a>
+  </div>
+    <br>
+    <div class="project-details">
+  <!--<h4>Learning Languages</h4>-->
+    <h4>Aprender Idiomas</h4>
+    <!--<p>I learned languages by myself, currently studying Russian for almost 2 years.</p>-->
+    <p>Aprendo lenguajes por mi cuenta, actualmente estoy estudiando Ruso , aproximadamente desde hace 2 años. </p>
+    <div class="project-footer"></div>
+    </div>
+    </article>
+    <!-- end of single project-->
+    <!--single project-->
+    <article class="single-project">
+    <div class="project-container">
+    <img style="height: 13rem;" src="./imagenes/Trekking.jpg" loading="lazy" alt="single project">
+    </a>
+    </div>
+    <br>
+    <div class="project-details">
+    <h4>Trekking</h4>
+    <!--<p>I enjoy going Outdoors with friends, follow trails, and going to nice places.</p>-->
+    <p>Disfruto del Senderismo y Trekking con amigos, siguiendo caminos y explorando buenos lugares.</p>
+    <div class="project-footer"></div>
+    </div>
+    </article>
+    <!-- end of single project-->
+    </div>
+    </section>
+    <div class="project-footer"></div>
+    </div>
+    </article>
+    <!-- end of single project-->   
+    </div>
+    </section>
+    <!-- End of Section Title-->
+    <div class="content-divider"></div>
+  <!-- footer -->
+  <footer class="footer">
+    <!-- social icons -->
+    <ul class="social-icons">
+      <li>
+        <a href="https://www.facebook.com/federico.schaufele.9/" target="_blank" class="social-icon">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/feed/" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+    </ul>
 
-    <!-- footer -->
-    <footer class="footer">
-      <ul class="social-icons">
-        <!-- single item -->
-        <li>
-          <a href="https://www.facebook.com/federico.schaufele.9/" class="social-icon">
-            <i class="fab fa-facebook"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/feed/" class="social-icon">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
-        <!-- end of single item -->
-      </ul>
-
-      <p>&copy; <span id="date"></span> Federico Schaufele. All rights reserved.</p>
-    </footer>
-    <script src="./js/app.js"></script>
+    <p>&copy; <span id="date"></span> Federico Schaufele</p>
+  </footer>
+    <a class="scroll-link top-link" href="#home">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- javascript -->
+    <script src="./js/app1.js"></script>
   </body>
 </html>
